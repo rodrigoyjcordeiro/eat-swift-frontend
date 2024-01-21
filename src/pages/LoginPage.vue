@@ -12,6 +12,3 @@ const $router = useRouter()
   </q-page>
 </template>
 
-<style scoped>
-
-</style>
