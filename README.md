@@ -1,6 +1,6 @@
 # Bem vindos ao projeto frontend EatSwift
 
-Trata-se de uma aplicacao que sera desenvolvida pelos alunos do curso fullstack development. 
+Trata-se de uma aplicacao que sera desenvolvida pelos alunos do curso fullstack development.
 É uma aplicacao que realiza gestao de produtos e pedidos voltada ao mercado food
 
 ## Instalando as dependencias
@@ -18,4 +18,5 @@ quasar dev
 ```bash
 quasar build
 ```
+
 
