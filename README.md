@@ -1,24 +1,21 @@
-# Quasar App (package)
+# Bem vindos ao projeto frontend EatSwift
 
-A Quasar Project
+Trata-se de uma aplicacao que sera desenvolvida pelos alunos do curso fullstack development. 
+É uma aplicacao que realiza gestao de produtos e pedidos voltada ao mercado food
 
-## Install the dependencies
+## Instalando as dependencias
 ```bash
-yarn
-# or
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Iniciando o projeto no ambiente de desenvolvimento
 ```bash
 quasar dev
 ```
 
 
-### Build the app for production
+### Preparando o projeto para producao
 ```bash
 quasar build
 ```
 
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
