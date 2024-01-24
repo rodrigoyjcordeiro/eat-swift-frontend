@@ -17,4 +17,5 @@ const routes: RouteRecordRaw[] = [
   },
 ];
 
+//teste
 export default routes;
