@@ -29,7 +29,19 @@
         <q-item-label
           header
         >
-          Navegue por aqui
+
+        <q-item v-for="link in linksList" clickable @click="redirecionar(link.to)">
+          <q-item-section side> 
+              <q-icon :name="link.icon"></q-icon>
+          </q-item-section>
+          <q-item-section  >
+            {{ link.title }}
+          </q-item-section>
+        
+
+        </q-item>
+
+          <q-item></q-item>
         </q-item-label>
       </q-list>
     </q-drawer>
@@ -43,6 +55,9 @@
 <script setup>
 import { ref } from 'vue';
 import {useShoppingCartStore} from "stores/shopping-cart-store";
+import {useRouter} from "vue-router";
+
+const $router = useRouter()
 const leftDrawerOpen = ref(false)
 const useShoppingStore = useShoppingCartStore()
 const linksList = [
@@ -74,6 +89,12 @@ const linksList = [
 
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value
+}
+
+const redirecionar = (to) => {
+
+ $router.push(to)
+
 }
 
 </script>
