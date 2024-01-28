@@ -29,7 +29,12 @@
         <q-item-label
           header
         >
-          Navegue por aqui
+          <q-item v-for="link in linksList" clickable="">
+             <q-item-section>
+             </q-item-section>
+             <q-item-section>
+             </q-item-section>
+          </q-item>
         </q-item-label>
       </q-list>
     </q-drawer>
