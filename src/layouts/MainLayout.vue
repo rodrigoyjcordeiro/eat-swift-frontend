@@ -29,7 +29,7 @@
         <q-item-label
           header
         >
-          <q-item v-for="link in linksList" clickable="">
+          <q-item v-for="link in linksList" clickable @click="redirecionar(link.to)">
              <q-item-section>
              </q-item-section>
              <q-item-section>
@@ -48,6 +48,8 @@
 <script setup>
 import { ref } from 'vue';
 import {useShoppingCartStore} from "stores/shopping-cart-store";
+import {useRouter} from 'vue-router';
+const $router= useRouter()
 const leftDrawerOpen = ref(false)
 const useShoppingStore = useShoppingCartStore()
 const linksList = [
@@ -79,6 +81,10 @@ const linksList = [
 
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value
+}
+const redirecionar = (to) => {
+  $router.push(to)
+  console.log("redirecionado para" + to)
 }
 
 </script>
