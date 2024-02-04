@@ -23,15 +23,6 @@
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header>
-          <q-tabs
-            class="q-pa-md"
-            v-for="i in linksList"
-            inline-label
-            vertical
-            align="center"
-          >
-            <q-route-tab :label="i.title" :icon="i.icon" :to="i.to" />
-          </q-tabs>
         </q-item-label>
       </q-list>
     </q-drawer>
