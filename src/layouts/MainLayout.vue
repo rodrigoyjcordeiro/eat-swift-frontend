@@ -33,6 +33,7 @@
              <q-item-section>
              </q-item-section>
              <q-item-section>
+              {{ link.title }}
              </q-item-section>
           </q-item>
         </q-item-label>
