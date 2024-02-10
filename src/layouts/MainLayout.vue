@@ -30,7 +30,8 @@
           header
         >
           <q-item v-for="link in linksList" clickable @click="redirecionar(link.to)">
-             <q-item-section>
+             <q-item-section side>
+              <q-icon :name="link.icon"></q-icon>
              </q-item-section>
              <q-item-section>
               {{ link.title }}
